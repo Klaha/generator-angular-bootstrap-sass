@@ -1,0 +1,7 @@
+{
+  "name": "<%= name %>",
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "angular": "1.6.1"
+  }
+}
