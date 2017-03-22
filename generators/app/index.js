@@ -78,7 +78,7 @@ module.exports = Generator.extend({
     );
     this.fs.copy(
       this.templatePath('_public/_scss/_style.scss'),
-      this.destinationPath('public/scss/style.js')
+      this.destinationPath('public/scss/style.scss')
     );
     this.fs.copy(
       this.templatePath('_public/_img/_image.jpg'),
