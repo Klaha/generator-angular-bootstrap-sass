@@ -5,7 +5,9 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9000,
-          base: 'public/'
+          base: 'public/',
+          hostname: 'localhost',
+          open: true
         }
       }
     },
@@ -20,7 +22,6 @@ module.exports = function (grunt) {
       project: {
         files: ['public/js/*.js', 'public/*.html', 'public/css/*.css'],
         options: {
-          open: true,
           livereload: true
         }
       },
