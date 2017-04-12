@@ -20,6 +20,7 @@ module.exports = function (grunt) {
       project: {
         files: ['public/js/*.js', 'public/*.html', 'public/css/*.css'],
         options: {
+          open: true,
           livereload: true
         }
       },
