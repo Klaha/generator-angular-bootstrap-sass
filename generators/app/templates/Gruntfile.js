@@ -20,7 +20,7 @@ module.exports = function (grunt) {
     },
     watch: {
       project: {
-        files: ['public/js/*.js', 'public/*.html', 'public/css/*.css'],
+        files: ['public/js/*.js', 'public/*.html', 'public/css/*.css', 'public/img/*.*'],
         options: {
           livereload: true
         }
