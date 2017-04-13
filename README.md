@@ -1,5 +1,5 @@
 # Angular - Bootstrap - Sass Generator 
-[![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
+[![NPM version][npm-image]][npm-url]
 
 This is a simple Yeoman Generator I made for quick development of angular websites! It saves you the hassle of downloading and linking the angular/bootstrap required files (plus some other neat extras) so you can go straight to the code!
 
@@ -8,6 +8,7 @@ This generator includes:
 * Bootstrap Framework v3.3.5
 * Angular Framework v1.6.1
 * Jquery Framework v.3.2.1
+* Jade
 * Grunt with LiveReload
 * HTML template with everything correctly linked!
 
