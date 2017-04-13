@@ -5,7 +5,7 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9000,
-          base: 'public/',
+          base: 'public',
           hostname: 'localhost',
           open: true
         }
@@ -18,6 +18,21 @@ module.exports = function (grunt) {
         }
       }
     },
+    jade: {
+      compile: {
+        options: {
+          pretty: true,
+        },
+        files:
+        [ {
+          cwd: "public/jade",
+          src: "**/*.jade",
+          dest: "public/",
+          expand: true,
+          ext: ".html"
+        } ]
+      }
+    },
     watch: {
       project: {
         files: ['public/js/*.js', 'public/*.html', 'public/css/*.css', 'public/img/*.*'],
@@ -26,15 +41,20 @@ module.exports = function (grunt) {
         }
       },
       css: {
-        files: 'public/scss/*.scss',
+        files: 'public/scss/**/*.scss',
         tasks: ['sass']
+      },
+      jade: {
+        files: 'public/jade/**/*.jade',
+        tasks: ['jade']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['jade', 'sass', 'connect', 'watch']);
 };

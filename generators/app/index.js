@@ -7,7 +7,7 @@ module.exports = Generator.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Hola! Bienvenido al generador de ' + chalk.red('Angular+Bootstrap+SaSS') + ' hecho por Jonathan!'
+      'Hola! Bienvenido al generador de ' + chalk.red('Angular+Bootstrap+SaSS') + ' hecho por Klaha!'
     ));
 
     var prompts = [{
@@ -55,8 +55,8 @@ module.exports = Generator.extend({
       }
     );
     this.fs.copyTpl(
-      this.templatePath('_views/_index.html'),
-      this.destinationPath('public/index.html'), {
+      this.templatePath('_public/_jade/_index.jade'),
+      this.destinationPath('public/jade/index.jade'), {
         name: this.props.name
       }
     );
@@ -90,7 +90,7 @@ module.exports = Generator.extend({
   },
   end: function() {
     this.log(yosay(
-      'Listo! Recuerda ejecutar ' + chalk.red('grunt') + ' para tener el livereload!'
+      'Listo! Recuerda ejecutar ' + chalk.red('grunt') + ' para iniciar el livereload!'
     ));
   },
 });
