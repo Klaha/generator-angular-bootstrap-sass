@@ -90,7 +90,7 @@ module.exports = Generator.extend({
   },
   end: function() {
     this.log(yosay(
-      'Listo! Recuerda ejecutar ' + chalk.red('grunt') + ' para iniciar el livereload!'
+      'Listo! Recuerda ejecutar ' + chalk.red('grunt') + ' para iniciar el livereload! (recuerda que debes tener la extension LiveReload en tu browser!)'
     ));
   },
 });
