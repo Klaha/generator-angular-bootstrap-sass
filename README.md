@@ -12,6 +12,12 @@ This generator includes:
 * Grunt with LiveReload
 * HTML template with everything correctly linked!
 
+## Updates / Versions
+
+**1.3.0 ~ January 8, 2018 ~** Added some missing dependencies needed for the generator to work flawlessly without the need of doing some extra steps. Thanks to [Frampersand](https://github.com/frampersand) for pointing this out! :facepunch: :sparkles:
+
+**< 1.3.0 ~ N/A ~** I was too lazy to do this; but basically just added an Jade Compilator plus other Grunt Tweaks.
+
 ## File Structure
 
 ```
@@ -65,7 +71,7 @@ yo angular-bootstrap-sass
 
 It will ask you for some input, like the name of your proyect and other stuff. Then it will run npm install and bower install.
 
-When Yeoman has finally done his work, all you have to do is to execute "grunt" in order to have livereload features (remember for livereload to work, you need the Livereload plugin installed in yout browser).
+When Yeoman has finally done his work, all you have to do is to execute "grunt" in order to have livereload features **(Remember for Livereload to work, you need the Livereload plugin installed in your browser)**.
 
 Have fun! :blue_heart:
 
@@ -78,7 +84,7 @@ Have fun! :blue_heart:
 
 ## License
 
-MIT © [Jonathan Martinez](www.3libras.co.ve)
+MIT © [Jonathan Martinez](https://about.me/Klaha)
 
 [npm-image]: https://badge.fury.io/js/generator-angular-bootstrap-sass.svg
 [npm-url]: https://npmjs.org/package/generator-angular-bootstrap-sass
